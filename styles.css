@@ -1,0 +1,189 @@
+/* Global Styles */
+body {
+    font-family: 'Georgia', serif;  /* More elegant font */
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;  /* Soft off-white background */
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;  /* Center the container */
+}
+
+/* Header */
+header {
+    background-color: #2a2a72;  /* Deep royal blue */
+    color: #f4e1d2;  /* Light cream */
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+header .logo {
+    width: 160px;
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1.5rem;
+}
+
+header nav ul li a {
+    color: #f4e1d2;  /* Creamy white */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;  /* Smooth color transition */
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus {
+    color: #ffde7d;  /* Soft gold hover effect */
+    outline: 2px solid #ffde7d;  /* Highlight for focus */
+}
+
+/* Home Section */
+#home {
+    background-color: #8e9aaf;  /* Muted royal blue-grey */
+    padding: 2rem 0;
+    text-align: center;
+    color: #f4e1d2;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 400px;  /* Set a maximum width */
+    border-radius: 10px;
+    margin: 20px auto;  /* Center image with auto margins */
+    display: block;  /* Ensures margin auto works */
+}
+
+/* Members Section */
+#members {
+    background-color: #557a95;  /* Soft navy blue */
+    padding: 2rem 0;
+    color: #f4e1d2;
+}
+
+.members-list {
+    display: flex;
+    flex-wrap: wrap;  /* Allows wrapping */
+    justify-content: space-around;  /* Space out items */
+}
+
+.members-list li {
+    background-color: #f4e1d2;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    color: #333;
+    text-align: center;
+    flex: 1 1 30%;  /* Responsive width */
+    max-width: 300px;  /* Set max width for individual items */
+}
+
+/* Trainers Section */
+#trainers {
+    background-color: #506680;  /* Slightly lighter royal blue */
+    padding: 2rem 0;
+}
+
+.trainers-list {
+    display: flex;
+    flex-wrap: wrap;  /* Allows wrapping */
+    justify-content: space-around;  /* Space out items */
+}
+
+.trainers-list li {
+    background-color: #f4e1d2;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    color: #333;
+    text-align: center;
+    flex: 1 1 30%;  /* Responsive width */
+    max-width: 300px;  /* Set max width for individual items */
+}
+
+.trainers-list li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* Classes Section */
+#classes {
+    background-color: #364f6b;  /* Deeper royal blue */
+    padding: 2rem 0;
+    color: #f4e1d2;
+}
+
+.classes-list {
+    display: flex;
+    flex-wrap: wrap;  /* Allows wrapping */
+    justify-content: space-around;  /* Space out items */
+}
+
+.classes-list li {
+    background-color: #ffde7d;  /* Gold */
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #333;
+    flex: 1 1 30%;  /* Responsive width */
+    max-width: 300px;  /* Set max width for individual items */
+}
+
+.classes-list li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #2a2a72;  /* Royal blue */
+    padding: 2rem 0;
+    color: #f4e1d2;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #1f3c88;  /* Darker royal blue */
+    color: #f4e1d2;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;  /* Stack links vertically */
+    }
+
+    .members-list li,
+    .trainers-list li,
+    .classes-list li {
+        flex: 1 1 100%;  /* Full width on small screens */
+    }
+}
